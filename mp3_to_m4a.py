@@ -5,9 +5,9 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from tqdm import tqdm
 
-# User provides input directory path directly
-input_dir = Path("C:/ATHARVA/Atharva/Music")  # Change this to your desired folder
-output_dir = Path("C:/ATHARVA/Atharva/Music/M4A_converted")  # Output folder
+
+input_dir = Path("")  # folder that you want to convert
+output_dir = Path("")  # Output folder
 
 def convert_file(args):
     mp3_path, bitrate, overwrite = args
@@ -82,11 +82,11 @@ def main():
 
     if errors:
         print("\nError details:")
-        for error in errors[:3]:  # Show first 3 errors
+        for error in errors[:3]: 
             print(f"File: {error['file']}")
             print(f"Error: {error['message']}\n")
 
 if __name__ == '__main__':
     main()
 
-print("Done..")
+print("Done..") 
