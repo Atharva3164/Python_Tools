@@ -659,4 +659,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-# streamlit run "/home/atharva/OneDrive/ATharva vs code files/Python/ML/16_Decision_tree/decision_tree_app.py"
+# streamlit run decision_tree_app.py  -- in terminal  @Atharva3164 - github
